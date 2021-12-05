@@ -1,0 +1,20 @@
+.PowerBox {
+  list-style: none;
+}
+
+.content-list {
+  list-style: none;
+}
+
+#logo {
+  content: url("./images/logo.png");
+  width: 5%;
+}
+
+body {
+  margin-left: 5%;
+}
+
+[role="tooltip"] {
+  z-index: 1500 !important;
+}

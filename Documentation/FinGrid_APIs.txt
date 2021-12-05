@@ -1,0 +1,211 @@
+GET /v1/variable/{variableId}/events/json?start_time={start_time}&end_time={end_time}
+HEADER: {
+	x-api-key: qYOn16Dx7W8HaZTKmIGrk8i5IOWHX9067Rih5j2L
+}
+
+
+start_time & end_time format: YYYY-MM-ddTHH:mm:ssZ
+	- example: 2021-01-18T22:00:00Z 
+variableId:
+
+	- 124
+	Electricity consumption in Finland 
+	Description: Electricity consumption in Finland is based on Fingrid's production measurements. Minor part of production which is not measured is estimated. 
+	The consumption is calculated as follows: Consumption = Production + Import - Export. Updated hourly.
+	Unit: MWh/h
+	Data peroid: 1h
+https://api.fingrid.fi/v1/variable/124/events/json?start_time=2021-02-14T12:00:00Z&end_time=2021-02-14T14:00:00Z
+[
+    {
+        "value": 11330,
+        "start_time": "2021-02-14T12:00:00+0000",
+        "end_time": "2021-02-14T13:00:00+0000"
+    },
+    {
+        "value": 11409,
+        "start_time": "2021-02-14T13:00:00+0000",
+        "end_time": "2021-02-14T14:00:00+0000"
+    },
+    {
+        "value": 11511,
+        "start_time": "2021-02-14T14:00:00+0000",
+        "end_time": "2021-02-14T15:00:00+0000"
+    }
+]
+
+	- 245
+	Wind power generation forecast - updated hourly
+	Description: Finnish wind power generation forecast for the next 36 hours. Updated hourly.
+	The forecast is based on weather forecasts and data about the location, size and capacity of wind turbines. The weather data sourced from multiple providers.
+	Unit: MWh/h
+	Data peroid: 1h
+https://api.fingrid.fi/v1/variable/245/events/json?start_time=2021-02-14T12:00:00Z&end_time=2021-02-14T14:00:00Z
+[
+    {
+        "value": 458.216000,
+        "start_time": "2021-02-14T12:00:00+0000",
+        "end_time": "2021-02-14T13:00:00+0000"
+    },
+    {
+        "value": 436.769000,
+        "start_time": "2021-02-14T13:00:00+0000",
+        "end_time": "2021-02-14T14:00:00+0000"
+    },
+    {
+        "value": 436.638000,
+        "start_time": "2021-02-14T14:00:00+0000",
+        "end_time": "2021-02-14T15:00:00+0000"
+    }
+]
+
+	- 75
+	Wind power generation - hourly data
+	Description: Finnish hourly wind power generation is a sum of measurements from wind parks supplied to Fingrid and of the estimate Fingrid makes from non-measured wind parks. 
+	Non-measured wind parks are about a tenth of the production capacity.
+	Unit: MWh/h
+	Data peroid: 1h
+
+https://api.fingrid.fi/v1/variable/75/events/json?start_time=2021-02-14T12:00:00Z&end_time=2021-02-14T14:00:00Z	
+[
+    {
+        "value": 250,
+        "start_time": "2021-02-14T12:00:00+0000",
+        "end_time": "2021-02-14T13:00:00+0000"
+    },
+    {
+        "value": 248,
+        "start_time": "2021-02-14T13:00:00+0000",
+        "end_time": "2021-02-14T14:00:00+0000"
+    },
+    {
+        "value": 283,
+        "start_time": "2021-02-14T14:00:00+0000",
+        "end_time": "2021-02-14T15:00:00+0000"
+    }
+]
+	- 166
+	Electricity consumption forecast of Finland. Forecast is updated hourly
+	Description: Continuously updated consumption forecast of Finland.
+	Unit: MWh/h
+	Data peroid: 1h ??????? 5mins
+https://api.fingrid.fi/v1/variable/166/events/json?start_time=2021-02-14T12:00:00Z&end_time=2021-02-14T12:30:00Z
+[
+    {
+        "value": 11350.870000,
+        "start_time": "2021-02-14T12:00:00+0000",
+        "end_time": "2021-02-14T12:05:00+0000"
+    },
+    {
+        "value": 11350.870000,
+        "start_time": "2021-02-14T12:05:00+0000",
+        "end_time": "2021-02-14T12:10:00+0000"
+    },
+    {
+        "value": 11350.870000,
+        "start_time": "2021-02-14T12:10:00+0000",
+        "end_time": "2021-02-14T12:15:00+0000"
+    },
+    {
+        "value": 11350.870000,
+        "start_time": "2021-02-14T12:15:00+0000",
+        "end_time": "2021-02-14T12:20:00+0000"
+    },
+    {
+        "value": 11350.870000,
+        "start_time": "2021-02-14T12:20:00+0000",
+        "end_time": "2021-02-14T12:25:00+0000"
+    },
+    {
+        "value": 11350.870000,
+        "start_time": "2021-02-14T12:25:00+0000",
+        "end_time": "2021-02-14T12:30:00+0000"
+    },
+    {
+        "value": 11350.870000,
+        "start_time": "2021-02-14T12:30:00+0000",
+        "end_time": "2021-02-14T12:35:00+0000"
+    }
+]
+
+	- 74
+	Electricity production in Finland
+	Description: Hourly electricity production in Finland are based on Fingrid's measurements. Minor part of production which is not measured is estimated. Updated hourly.
+	Unit: MWh/h
+	Data peroid: 1h
+https://api.fingrid.fi/v1/variable/74/events/json?start_time=2021-02-14T12:00:00Z&end_time=2021-02-14T14:00:00Z
+[
+    {
+        "value": 8925,
+        "start_time": "2021-02-14T12:00:00+0000",
+        "end_time": "2021-02-14T13:00:00+0000"
+    },
+    {
+        "value": 8982,
+        "start_time": "2021-02-14T13:00:00+0000",
+        "end_time": "2021-02-14T14:00:00+0000"
+    },
+    {
+        "value": 9115,
+        "start_time": "2021-02-14T14:00:00+0000",
+        "end_time": "2021-02-14T15:00:00+0000"
+    }
+]
+	- 178
+	Temperature in Helsinki - real time data
+	Description: Outside air temperature measurement at Tammisto substation. The data is updated every 3 minutes.
+	Unit: C
+	Data peroid: 3min
+https://api.fingrid.fi/v1/variable/178/events/json?start_time=2021-02-14T12:00:00Z&end_time=2021-02-14T12:30:00Z
+[
+    {
+        "value": -3.8204,
+        "start_time": "2021-02-14T12:01:00+0000",
+        "end_time": "2021-02-14T12:01:00+0000"
+    },
+    {
+        "value": -3.8204,
+        "start_time": "2021-02-14T12:04:00+0000",
+        "end_time": "2021-02-14T12:04:00+0000"
+    },
+    {
+        "value": -3.8204,
+        "start_time": "2021-02-14T12:07:00+0000",
+        "end_time": "2021-02-14T12:07:00+0000"
+    },
+    {
+        "value": -4.4524,
+        "start_time": "2021-02-14T12:10:00+0000",
+        "end_time": "2021-02-14T12:10:00+0000"
+    },
+    {
+        "value": -4.4524,
+        "start_time": "2021-02-14T12:13:00+0000",
+        "end_time": "2021-02-14T12:13:00+0000"
+    },
+    {
+        "value": -4.4524,
+        "start_time": "2021-02-14T12:16:00+0000",
+        "end_time": "2021-02-14T12:16:00+0000"
+    },
+    {
+        "value": -4.4524,
+        "start_time": "2021-02-14T12:19:00+0000",
+        "end_time": "2021-02-14T12:19:00+0000"
+    },
+    {
+        "value": -4.4524,
+        "start_time": "2021-02-14T12:22:00+0000",
+        "end_time": "2021-02-14T12:22:00+0000"
+    },
+    {
+        "value": -4.4524,
+        "start_time": "2021-02-14T12:25:00+0000",
+        "end_time": "2021-02-14T12:25:00+0000"
+    },
+    {
+        "value": -5.0695,
+        "start_time": "2021-02-14T12:28:00+0000",
+        "end_time": "2021-02-14T12:28:00+0000"
+    }
+]
+	
